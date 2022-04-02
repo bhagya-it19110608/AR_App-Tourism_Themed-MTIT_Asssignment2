@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+  <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs>
+    <a-assets>
+      
+      
+      <a-asset-item id="obj4" src="BrickDoor.obj"></a-asset-item>
+      
+    </a-assets>
+
+    <a-marker preset='custom' type='pattern' url='pattern-Yel.patt'>
+	 <a-entity obj-model="obj: #obj4;" material="src:BrickDoor_Model.jpeg" position="0 0 0"  scale="0.02 0.02 0.02">
+      		<a-animation attribute="rotation" to="0 185 70" dur="7000" repeat="2" ease="linear">
+	</a-entity>
+      <a-entity position="2 0.2 1.1" scale="0.5 0.5 0.5" rotation="0 0 0" text="value: Binu Marambage -IT19102856;color:black"></a-entity>
+    </a-marker>
+
+    
+    
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+
+</html>
