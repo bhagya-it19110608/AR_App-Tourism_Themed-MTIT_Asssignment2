@@ -15,7 +15,7 @@
     </a-assets>
 
     <a-marker preset='custom' type='pattern' url='pattern-letter_I.patt'>
-	 <a-entity obj-model="obj: #obj2;" material="src: model.png" position="0 0 0"  scale="0.0001 0.0001 0.0001">
+	 <a-entity obj-model="obj: #obj2;" material="src: model.jpg" position="0 0 0"  scale="0.0001 0.0001 0.0001">
       		<a-animation attribute="rotation" to="0 360 0" dur="7000" repeat="0" ease="linear">
 	</a-entity>
       <a-entity position="2 0.2 1.1" scale="8 8 8" rotation="0 0 0" text="value: Trasportation-Helicopter Perera H A I T-IT19169286;color:black"></a-entity>
