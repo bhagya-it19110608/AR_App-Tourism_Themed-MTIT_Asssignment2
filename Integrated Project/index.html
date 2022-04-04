@@ -11,6 +11,7 @@
     <a-assets>
       
       <a-asset-item id="obj1" src="pic.obj"></a-asset-item>
+	  <a-asset-item id="obj2" src="img.obj"></a-asset-item>
       <a-asset-item id="obj3" src="model1.obj"></a-asset-item>
       
     </a-assets>
@@ -22,7 +23,13 @@
 	</a-entity>
       <a-entity position="2 0.2 1.1" scale="8 8 8" rotation="0 0 0" text="value: Places Viewer -Castle Weerasinghe B M -IT19110608;color:blue"></a-entity>
     </a-marker>
-
+	
+	<a-marker preset='custom' type='pattern' url='pattern-letter_I.patt'>
+	 <a-entity obj-model="obj: #obj2;" material="src: img.png" position="0 0 0"  scale="0.0001 0.0001 0.0001">
+      		<a-animation attribute="rotation" to="0 360 0" dur="9000" repeat="indefinite" ease="linear">
+	</a-entity>
+      <a-entity position="2 0.2 1.1" scale="8 8 8" rotation="0 0 0" text="value: Transportation -Helicopter Perera H A I T -IT19169286;color:black"></a-entity>
+    </a-marker>
 
    <a-marker preset='custom' type='pattern' url='pattern-W.patt'>
 	 <a-entity obj-model="obj: #obj3;" material="src: model1.jpg" position="0 0 0"  scale="0.01 0.01 0.01">
