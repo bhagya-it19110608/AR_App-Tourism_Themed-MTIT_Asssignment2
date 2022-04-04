@@ -13,6 +13,7 @@
       <a-asset-item id="obj1" src="pic.obj"></a-asset-item>
 	  <a-asset-item id="obj2" src="img.obj"></a-asset-item>
       <a-asset-item id="obj3" src="model1.obj"></a-asset-item>
+	  <a-asset-item id="obj4" src="BrickDoor.obj"></a-asset-item>
       
     </a-assets>
 
@@ -35,9 +36,15 @@
 	 <a-entity obj-model="obj: #obj3;" material="src: model1.jpg" position="0 0 0"  scale="0.01 0.01 0.01">
       		<a-animation attribute="rotation" to="0 360 0" dur="9000" repeat="indefinite" ease="linear">
 	</a-entity>
-      <a-entity position="2 0.2 1.1" scale="8 8 8" rotation="0 0 0" text="value: Food Items -Burger I U Wickramasuriya -IT19086958;color:red"></a-entity>
+      <a-entity position="2 0.2 1.1" scale="8 8 8" rotation="0 0 0" text="value: Food Items -Burger I U Wickramasuriya -IT19086958;color:blue"></a-entity>
     </a-marker>
-
+	
+	<a-marker preset='custom' type='pattern' url='pattern-Yel.patt'>
+	 <a-entity obj-model="obj: #obj4;" material="src: BrickDoor_Model.jpeg" position="0 0 0"  scale="0.05 0.05 0.05">
+      		<a-animation attribute="rotation" to="0 185 70" dur="7000" repeat="2" ease="linear">
+	</a-entity>
+      <a-entity position="2 0.2 1.1" scale="0.5 0.5 0.5" rotation="0 0 0" text="value: Accommodation -Hotel M H Binu Yelani Marambage -IT19102856;color:purple"></a-entity>
+    </a-marker>
 
     <a-entity camera></a-entity>
   </a-scene>
